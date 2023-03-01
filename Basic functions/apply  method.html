@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // apply method in javascrip is used to call the funtion anywher in the program. we can pass only arrays in the form of argument.
+        // it can contain only one array at a time 
+        // we can play with arrays by using apply method 
+        // this / null keyword is compalsary to add as argument otherwise it will give you minus Infinity value
+
+        var arr1=[1,2,3,4,5];
+        var arr2=[6,7,8,9,10];
+        for(v of arr1){
+            document.write(v+"<br>");
+        }
+        document.write("secound array <br>")
+        for(w of arr2){
+            document.write(w+"<br>")
+        }
+        arr1.push.apply(arr1,arr2);
+        document.write(arr1+"<br>")
+        document.write(Math.max.apply(null,arr1)+"<br>"); //<=we can use null keyword instead of this.
+        document.write(Math.min.apply(this,arr2)); //<==we can use this keyword instead of null
+
+
+
+
+
+    </script>    
+</body>
+</html>

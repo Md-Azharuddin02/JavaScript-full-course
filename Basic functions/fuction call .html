@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // in javascript we dont use any class, we used funtions intead of class
+        // starting F (capital F) is the pre buit funtion in the javascrip
+        // whenever we create constructor of the prebuild fuction  and pass any argument in the then we passing retun is compalsary
+        // every paremeters of the method constructor must be inside the ("")
+
+
+        // adding two Numbers using method constructor
+      var add = new Function("first","secound", "return first + secound"); //<=====here we passing return for add
+      document.writeln(add(10,20)+"<br>");
+
+      // multipliction five number using method constructor
+    //   var product= new Function("first","secound","third","return first*secound*third");
+      var product= new Function("first","secound","third","return first*secound*third");
+      document.writeln(product(10,20,30)+"<br>");
+
+    //   <==== we can write pow instead of power (Math.pow(number, power))
+    //   finding the square of the given number using method constructor
+      var sqr= new Function("first","secound","return Math.pow(first,secound)"); 
+        document.writeln(sqr(10,2));
+
+        
+    </script>
+</body>
+</html>

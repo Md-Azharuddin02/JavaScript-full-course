@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //call function is used to call any function from anywhere in the page.
+        // in the call function we can only pass the argument not any. we can pass any arrays.
+        // whenever we will call the any function and, to get their value we have to pass this keyword as a arguments. which give the preference
+        
+        // first example
+        function Emp(id,name){
+            this.id = id;
+            this.name=name;
+        }
+        function PermanentEmp(id,name,salary){
+            Emp.call(this,id,name,salary);
+        }
+
+        //first way to write
+        var ep= new PermanentEmp(1, "sainger",10000);
+        document.writeln(ep.name+"<br>");
+
+
+        // secound example
+        function Temporary_Emp(id, name, salary){
+            Emp.call(this,id,name,salary);
+        }
+        var first_PermanentEmp= new PermanentEmp(2,"Sonu kr sharma",25000);
+        var first_Temprory_Emp=new Temporary_Emp(2,"Alina rais",3500);
+
+        document.writeln(first_Temprory_Emp.name+"</br>");
+        document.writeln(first_PermanentEmp.name);
+
+
+    </script>
+</body>
+</html>

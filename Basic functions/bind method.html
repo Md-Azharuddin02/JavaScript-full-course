@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Bind method in javascrip will help you to store the funtion in a variable and bind that variable with other objects. 
+
+        // here we will firstly stor the object function(getName) in a variable and after that we will bind that variable with another objects. 
+
+        // it will help when if there is no any function inside the object and that object needs to add some function then we can bind. 
+
+        // in order to bind the funtion to another object, another object must have name propery this is the the funtion is returing (here name is returning it mean object must have name variable)
+
+        // in order to get the name we should use this.name keyword
+
+        var website={
+             name:"prince sainger",
+             getName:function(){
+                return this.name;
+             }
+        }
+        var website2={
+            name:"sonu kr sharma"
+        }
+        var unBoundMethod= website.getName;
+        var bindMethod= unBoundMethod.bind(website); //here bindMethod is just a variable
+        document.write(bindMethod()); // whereas here bindMethod is method()
+
+
+        var company={
+            name :"prince sainger",
+            getData:function(){
+                return this.name ;
+            }
+        }
+        var company2={
+            name:"saurabh"
+        }
+        var company3={
+            name:"sonu kr",
+        }
+        var unBind=company.getData;
+        var bindMethod= unBind.bind(company3);
+        var bindMethod2= unBind.bind(company2);
+
+        document.write(bindMethod());
+        document.write(bindMethod2());
+
+
+</script>
+</body>
+</html>

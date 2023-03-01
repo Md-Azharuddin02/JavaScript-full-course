@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //in order to seal the object we can use Object.seal() method.
+        // this method work like freez method but we can change the  properies in the seal method
+        // if we want to delete that properties after the changing or before the changing
+        //we can add and modify the value in the object but cant delete that value from the object
+        
+        const obj={
+            name:'prince',
+            age:20
+        }
+        const new_obj= Object.seal(obj)
+        console.log(new_obj.name)
+        delete new_obj.age;
+        console.log(new_obj.age)
+        obj.name='sainger'
+        console.log(new_obj.name)
+
+
+        // in order to check the object is sealed or not we can use object.isSealed()
+        console.log(Object.isSealed(new_obj))
+    </script>
+</body>
+</html>

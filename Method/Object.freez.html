@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // if you want that object should not be change then we can use Object.freeze() method. 
+        // this method work as a lock on the object has already created 
+        // in oreder to freeze the object we need to assign the existing object into another new object.
+
+        var obj= {
+            name:"prince ",
+            age:20
+        }
+        var newobj= Object.freeze(obj);
+        obj.name="sam";
+        console.log(obj.name,obj.age)
+
+
+        //in order to check the freez object is frozen or not we use Object.isFrozen() method
+        console.log(Object.isFrozen(obj))
+        console.log(Object.isFrozen(newobj))
+
+
+    </script>
+</body>
+</html>

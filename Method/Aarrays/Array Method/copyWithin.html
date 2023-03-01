@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // in order to copy Element from the arrya we can use copyWithin Array method.
+        // we can pass three argument in that copyWithin mehtod
+        // first argument will define from where counting should be started 
+        // secound argument will define from where copy will start 
+        // third argument will define at which index copy should be end 
+        // afert the copied rest of all Elements will store in that new arrays from secound argument and 
+
+        const arr1=[10,20,30,40,50,60,70,80,90];
+        const value= arr1.copyWithin(0,3,5); //<===count start =0(10),copy strt=2(30),copy end=5(50),there elements are 
+                                                // stored in the array and six(6) Elements are left to store in the array. 
+                                                // so again it will sart storing Element from secound argument(30) and it will
+                                                // end until store left six element in the array 
+        console.log(value);
+        const value2= arr1.copyWithin(1,1,8)
+        console.log(value2)
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // prototype is funtion which is always associated with the function 
+        // whenever we create a funtion then always that function will have a prototype object .
+        // prototype  is an object that has all access on the function properties and method. 
+        // with the help of prototype we can change and modify the property of the current funtion 
+        // in order to achieve prototype, function must be created.
+
+
+
+        function fruit(){
+            this.name='orange';
+        }
+        function fun(){
+            fruit.call(this);
+        }
+        fun.prototype = Object.create(fruit.prototype);
+        var app= new fun();
+        console.log(app);
+
+
+    </script>
+</body>
+</html>
