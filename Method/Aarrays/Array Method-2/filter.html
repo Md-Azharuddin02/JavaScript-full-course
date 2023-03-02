@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // filter() method in Array used to filter the Element from the existing Array
+        // we will pass the argument and check the Array that how many Element of the array is full fill the condition 
+        // filter() method will return all the Element which full fill the condition from the Array
+        // This is the one of the important method in javascript in order to web application development
+      
+        var number=[20,30,100,90,100,180,20,140,11,61];
+    //    first condtion 
+       function checkEqualTo(v){
+        return v==100;
+       }
+       document.writeln(number.filter(checkEqualTo)+"<br>");
+
+    //    secound conditon 
+    function checkLess(v){
+        return v<100;
+       }
+       document.writeln(number.filter(checkLess)+"<br>");
+
+    //    third condition 
+    function checkGreater(v){
+        return v>100;
+       }
+       document.writeln(number.filter(checkGreater)+"<br>");
+    </script>
+</body>
+</html>

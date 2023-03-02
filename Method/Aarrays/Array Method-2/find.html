@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // find() method in array will help you to find the particular Element from the array 
+        // it will return first Element of the Array if that Element is satisfing that condition 
+
+        var number=[20,30,10,5,10,80,20,40,11,61]; 
+        // first condition 
+        function checkGreater(f){
+            return f>30;                //here it will return 80 cause 80 is satisfing the first condition 
+        }
+        document.write(number.find(checkGreater)+"<br>");
+        //secound conditon
+        function checkLess(fm){
+            return fm<30;                //here it will return 20 cause 20 is satisfing the first condition 
+        }
+        document.write(number.find(checkLess)+"<br>");
+        // third condtion 
+        function checkEqualTo(c){
+            return c==30;               //here it will return 30 cause 30 is satisfing the first condition 
+        }
+        document.write(number.find(checkEqualTo))
+
+    </script>
+</body>
+</html>

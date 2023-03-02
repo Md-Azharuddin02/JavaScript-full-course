@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // in from() method in array, every string inside the from("-----") method will conver into seprate element of the array
+        // every word of the array will consider as an element and space will also considered as an element of the array.  
+        
+        var arr= Array.from("THIS IS A JAVASCRIPT COURSE");
+        document.writeln(arr +"1<br><br>");
+
+        // if  we want to assign some date and that data should be store in the form of element but that elemet should like a word not like a char then we can use a function.
+        // firstly i will stor that function into a variable
+
+        var store= function(){
+            document.writeln(Array.from(arguments));
+        }
+        store("HTML","CSS","Java","JavaScript","Python");
+
+    </script>
+</body>
+</html>
