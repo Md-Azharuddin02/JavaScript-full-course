@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // In oreder to use every method in array a funcion must be decleard
+        // every method will check all the value in the array is greater than or less than of the given value and return true or false. 
+        var arr= [10,20,30,40,50,60];
+        function check(value){
+            return value <70;   //here all element of the array is less than 70 then thats why it will return true
+                                //if a single element will not satisfy this condition then it will return false
+        }
+        document.write(arr.every(check));
+    </script>
+</body>
+</html>
