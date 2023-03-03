@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // in oreder to check the index value of the specific Element we use indexOf() method 
+        // if you have same Element more than one than it will return first Element index value 
+        // if you want to get the secound Element of the array then you have to specify parameter from where counting is going to start 
+        // if that given Element is not in the given array than it will return -1 index value 
+
+
+
+        var arr= ['c','c++','java','python','c#'];
+        var arr2= ['c','c++','java','python','c#','java'];
+        document.write(arr.indexOf('java')+"<br>");
+        document.write(arr.indexOf('c#')+"<br>");
+
+        document.write(arr2.indexOf('java')+"<br>");   //<==here it java is returning first java index value which is 2 not 5 
+
+        document.write(arr2.indexOf('java',3)) //<== here we know that first index value of java is 2 so we will pass 3 to start checking the next java element and we get the value on the 5th index 
+
+        document.write(arr.indexOf('angular')); //<=== here angular is not in the array thats why it will return -1
+
+    </script>
+</body>
+</html>

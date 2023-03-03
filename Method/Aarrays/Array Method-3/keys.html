@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // keys() method will convert all index of the Array into keys, it means that array will convert into an object (key value pairs)
+        // and every index will convert into keys 
+        var arr= ['c','c++','java','python','c#'];
+        var obj= arr.keys();
+
+        for(a of arr){
+            document.write(a+"<br>")//<===========here it is just an array
+        }
+        document.write("-------------------------------<br>")
+        for(k of obj){
+            document.write(k+"<br>")//<===========here it is working as an object
+        }
+    </script>
+</body>
+</html>
