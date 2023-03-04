@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // match() method in string is use to check the passing arument is in the string or not 
+        // if the given argument lies in the string it will return that string otherwise it will return null value 
+        // This is also a case sensetive method 
+        // in oreder to ignore case sensitivit we can use (/match argument/i) 
+
+        var str= "This is a javascript course where we will leanr JavaScript "
+        document.write(str.match('javascript')+'<br>')
+        document.write(str.match('Javascript')+'<br>') //Exmaple of case sensetive
+        document.write(str.match(/Javascript/i)+'<br>') //Exmaple of ignoring the case sensetivity
+    </script>
+</body>
+</html>

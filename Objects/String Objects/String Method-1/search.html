@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // search() in string will return the specfic word of char starting index value 
+        // if you want to search kr then string the it will search and retun the kr staring index value which is 7
+        // if the given  char or sub String is not in the string then it will return -1
+        // it is case sensetive so before passing the argument as sub string make sure the case is correct 
+        // we make pass the argumenet that will ignore tha case sensitivity by using (/search keyword/i). 
+
+        var name= 'saurbh kr sharma';
+        document.write(name.search('sharma')+"<br>")
+        document.write(name.search('Sharma')+"<br>")  // its the exmaple of case sensetive of Sharma
+        document.write(name.search(/Sharma/i)+"<br>") // its the exmaple of ignore case sensitivity of Sharma
+
+        document.write(name.search('mango'))
+    </script>
+</body>
+</html>
