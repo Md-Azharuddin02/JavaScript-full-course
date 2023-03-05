@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="color">
+    <form action="">
+        name <input type="text" id="name">  <br> <br>
+        <button id="btn" onclick="clickMe()">click Me</button>
+    </form>
+
+    <script>
+        // in order to target specific Element of the browser we use getElementById() method()
+
+        function clickMe(){
+            document.getElementById("color").style.backgroundColor="green"
+            document.getElementById("btn").style.visibility="hidden";
+            var name=document.getElementById("name").value;
+            alert("Welcome :"+name)
+        }
+
+    </script>
+</body>
+</html>

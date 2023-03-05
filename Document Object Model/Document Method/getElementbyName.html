@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+       male <input type="radio" value="male" name="gender"> <br>
+       female <input type="radio" value="female" name="gender"> <br>
+       others <input type="radio" value="other" name="gender"> <br>
+        <button type="submit" onclick="showGender()">show gender</button>
+    </form>
+    <script>
+         // in order to access the Element by their name then we can use getelementByName() method 
+        // it will return the value in the form of Array
+
+        function showGender(){
+            var x= document.getElementsByName('gender');
+            alert(x[0].value);
+            alert(x[1].value);
+            alert(x[2].value);
+        }
+
+    </script>
+</body>
+</html>

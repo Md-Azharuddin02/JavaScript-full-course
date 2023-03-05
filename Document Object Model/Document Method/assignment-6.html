@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assingment-6</title>
+</head>
+<body>
+    <!-- Question 1. get the value from the user by using promt method and show on the browser in the label tage  -->
+    <h1><label for="" id="Firstname" ></label></h1>
+    <p class="age"></p>
+    <p class="age"></p>
+    <p class="age"></p>
+    <p class="age"></p>
+    <p class="age"></p>
+    <script>
+        // var x=prompt("Q1) Please enter your first name");
+        // document.getElementById("Firstname").innerHTML=x;
+            var age= prompt("Q2 Enter your age :" )
+            var count= document.getElementsByClassName("age");
+            for(value in count){
+                document.getElementsByClassTagName("p")[value].innerHTML=age;
+            }
+           
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome Back 1</h1>
+    <h1>Welcome Back 2</h1>
+    <h1>Welcome Back 2</h1>
+    <br> <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, reprehenderit!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, reprehenderit!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, reprehenderit!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, reprehenderit!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, reprehenderit!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, reprehenderit!</p>
+    <br><br><br>
+    <a href="">lorem</a>
+    <a href="">lorem</a>
+    <a href="">lorem</a>
+    <a href="">lorem</a>
+    <br><br>
+    <button onclick="btn()">Chage color</button>
+   <script>
+            // in order to access the Element by their tagname we can use getElementByTagName() method 
+        // it will return the value in the form of Array
+            function btn(){
+                var x=document.getElementsByTagName('h1');
+                alert("h "+x.length);
+                var y=document.getElementsByTagName('p');
+                alert("p "+y.length);
+                var z=document.getElementsByTagName('a');
+                alert("a "+z.length);
+            }
+   </script> 
+</body>
+</html>
