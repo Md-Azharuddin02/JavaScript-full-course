@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form name="myForm" action="index.html" onsubmit=" return clickMe()">
+      Name  <input type="text" name="" id="name" placeholder="name">
+      Password <input type="password" name="" id="password" placeholder="password">
+        <button type="submit">click Me</button>
+    </form>
+
+    <script>
+        function clickMe(){
+            var name=document.myForm.name;
+            var password=document.myForm.password;
+
+            if(name.value.trim() == ""){
+                alert("Please Enter the name");
+                name.style.border="1px solid red";
+                return false;
+            }
+            else if(password.value.trim()=="" || password.value.length<8){
+                alert("password must be greater than 8 digits");
+                password.style.border="1px solid red";
+                return false;
+            }
+            else{
+                return true;
+            }
+          
+        }
+    </script>
+</body>
+</html>
