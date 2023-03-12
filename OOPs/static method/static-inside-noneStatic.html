@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Test{
+            static show(){
+                document.write("show static method")
+            }
+             display(){      // <=====none static method
+                Test.show(); //<======static method
+                // this.show()//< we cant use this keyword for calling static method
+            }
+            
+        }
+        var obj = new Test();
+        obj.display();
+    </script>
+</body>
+</html>

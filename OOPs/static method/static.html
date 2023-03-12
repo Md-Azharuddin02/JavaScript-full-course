@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //  javascript static method that belogs to class not class reference
+        // it mean object is not needed to call static method. 
+        // the method will direcly call by itself
+
+        // 1.if we created more than one static method with same name js will invoke the last one 
+        // 2. static method is used to create ustility function 
+        // 3 we use this method to call static method in another static method
+        // 4. we cant use this keyword inside no static method. in this case we can  call by using the name of the class
+        // class_name.static_method
+
+        class Test{
+            static display(){
+                document.write("This is a static method")
+            }
+        }
+        Test.display();
+
+    </script>
+</body>
+</html>
