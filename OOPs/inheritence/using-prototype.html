@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Bike(company){
+            this.company=company;
+        }
+        Bike.prototype.bikecompany=function(){
+            return this.company;
+        }
+        function vicle(name,price){
+            this.name=name;
+            this.price=price;
+        }
+        var b= new Bike("Honda");
+        vicle.prototype=b;
+
+        var v1= new vicle("shine",700000);
+        document.write(v1.name+"<br>");
+        document.write(v1.price+"<br>");
+        document.write(v1.company+"<br>");
+    </script>   
+</body>
+</html>

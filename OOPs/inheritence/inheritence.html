@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // it maintain is-A relationship
+        // extends keyword is used to inherit parent 
+        // with the help of we can get the property and method of the parent class 
+        // we can also use prototype to achieve ineritence 
+
+        class parent{
+            showParent(){
+                document.write("parent class")
+            }
+        }
+        class child extends parent{
+            showChild(){
+                document.write("child class");
+            }
+        }
+        var obj= new child();
+        obj.showParent();
+    </script>
+</body>
+</html>
