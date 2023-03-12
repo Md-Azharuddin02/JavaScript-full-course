@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // we can also encapsulate data with prototype
+        function Students(name,Roll){
+            var Roll=Roll;
+            var Name=Name;
+            Object.defineProperty(this,"Roll",{
+                set:function(Roll){
+                    this.Roll= Roll;
+                },
+                get:function(){
+                    return Roll;
+                }
+                
+            });
+            Object.defineProperty(this,"name",{
+                set:function(name){
+                    this.name=name;
+                },
+                get:function(){
+                    return name;
+                }
+            });
+        }
+        var obj= new Students("prince",11192732);
+        document.write(obj.name+"<br>");
+        document.write(obj.Roll);
+    </script>
+</body>
+</html>

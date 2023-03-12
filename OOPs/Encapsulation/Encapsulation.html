@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // encapsulation is the process of binding the data with the function 
+        // it allow to control the data and Validit
+
+        // 1. achieve encapsulation we use var keyword to make data member private 
+        // 2. we use setter method to set the data and getter method to get the data 
+
+        class Students{
+           constructor(){
+            var name;
+           }
+            setName(name){
+                this.name=name;
+            }
+            getName(){
+                return this.name;
+            }
+        }
+        var obj= new Students();
+        obj.setName("prince");
+
+        document.write(obj.getName());
+
+    </script>
+</body>
+</html>
