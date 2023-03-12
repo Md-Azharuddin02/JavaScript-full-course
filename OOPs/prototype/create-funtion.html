@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // javascript is also known as prototype language
+        // it is an another way to acces the properties of the class without creating any object 
+        // prototype hold all those properties that hold an Object
+        // whenever we create an objec then every time one copy of function store in the memory.lets suppose if we are creating 100 objects then 100 copy of the objec will be created and store in the memory and it will conusme the memory .But if we are using prototype then will not consume the memory
+        //prototype will create one copy of the funtion and share with all objects
+        //Thats why it will use less memory 
+
+        // ---prototype chaning----
+        //a prototype hold all the properties of objects 
+        //it means in the chaning we will consider first function secound prototype and then third object 
+
+        function Employee(fname, lname ){
+            this.fname=fname;
+            this.lname=lname;
+
+            
+        }
+        Employee.prototype.fullName= function(){
+            return this.fname+" "+this.lname;
+        } 
+        var obj1= new Employee("prince","sainger");
+        var obj2= new Employee("sonu","sharma");
+        
+        document.write(obj1.fullName());
+        document.write("<br>")
+        document.write(obj2.fullName());
+
+    </script>
+</body>
+</html>
