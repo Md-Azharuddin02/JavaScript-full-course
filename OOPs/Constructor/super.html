@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // super(); keyword is used to call imidiat parent class instance variable, construtor and methods
+
+        class company{
+            constructor(company_name){
+                this.company_name=company_name;
+            }
+                // showCompany(){
+                //     document.write('parent class method');
+                // }
+        }
+        class Employee extends company{
+            constructor(id,name,salary){
+                super();    //<==== calling parent class constructor
+                this.id= id;
+                this.name=name;
+                this.salary=salary;
+            }
+            showEmpDetails(){
+                document.write(this.id+"<br>");
+                document.write(this.name+"<br>");
+                document.write(this.salary+"<br>");
+            }
+        }
+        var obj1= new Employee("lean-vern"+ 123,"prince",25000);
+        obj1.showEmpDetails();
+    </script>
+</body>
+</html>

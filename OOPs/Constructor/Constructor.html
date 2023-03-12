@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //in javascript constructor is a method.which is used to initialize the and create the object.it is called when memory is allocated  for the object
+
+        // 1.constructor keyword is used to create a constructor method
+        // 2. class can hold one constructor method only 
+        // 3. javascript allow us to use parent class constructor by using super keyword
+
+        // note we cant use super(); keyword after this keyword
+
+        // in javascript if we are working with class then we have to create one construtory. without constructor we cant create object.
+
+        // this rule aplly only in the class not in the function
+
+        class company{
+            constructor(company_name){
+                this.company_name=company_name;
+            }
+        }
+        class Employee extends company{
+            constructor(id,name,salary){
+                super();
+                this.id=id;
+                this.name=name;
+                this.salary=salary;
+            }
+            showDetails(){
+                document.write(this.id +"<br>");
+                document.write(this.name +"<br>");
+                document.write(this.salary +"<br>");
+                document.write(this.company_name +"<br>");
+            }
+        }
+        var obj1= new Employee("Learn vern",123,"prince",250000);
+        obj1.showDetails();
+
+
+    </script>
+</body>
+</html>
