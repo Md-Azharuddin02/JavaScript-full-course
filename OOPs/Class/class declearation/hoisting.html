@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //In Javascript class does not support hoisting 
+        //hoisting is nothing but changing the possition the objects .
+        //like we can not declear object before the class name
+        var obj= new Emp(123,"prince",50000);
+        obj.show();
+
+        class Emp{
+            constructor(id,name,salary){
+                this.id= id;
+                this.name=name;
+                this.salary=salary;
+            }
+            show(){
+                document.write("id :"+this.id);
+                document.write("Name :"+this.name);
+                document.write("salary :"+this.salary);
+            }
+        }
+        // --------------------we can see the error in the console like this--------
+        //Uncaught ReferenceError: Cannot access 'Emp' before initializationat hoisting.html:14:18
+    </script>
+</body>
+</html>

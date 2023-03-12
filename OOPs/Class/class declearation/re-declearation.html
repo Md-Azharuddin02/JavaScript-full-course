@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //class  does not support declearation
+
+        class Emp{      //<=========here we declear class name
+            constructor(id,name){
+                this.id= id;
+                this.name=name;
+            }
+            showDetails(){
+                document.write(this.id+" "+this.name);
+            }
+        }
+        var obj= new Emp(123,'prince');
+        obj.showDetails();
+
+        //the console will show the following error
+       //    Uncaught SyntaxError: Identifier 'Emp' has already been declared
+
+        class Emp{ //<==========here we are trying to declear same class again and it will throw exception
+
+        }
+
+    </script>
+</body>
+</html>

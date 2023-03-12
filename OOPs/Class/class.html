@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //class is the collection of objects 
+        // It is a real world intity.
+
+        class Emp{
+            constructor(id,name,salary){
+                this.id=id;
+                this.name=name;
+                this.salary=salary;   
+            }
+            show(){
+                document.write(this.id +" "+this.name+" "+this.salary);
+            }
+        }
+        var obj= new Emp(123,"prince0",25000);
+        obj.show();
+
+
+    </script>
+</body>
+</html>
