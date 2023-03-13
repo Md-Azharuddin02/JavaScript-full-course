@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //polymorephism is the one of the important part of the object oriented programming paradiagram.
+        // it allows use one method from multiple object
+        // javascript is a not type-safe language we can pass any types of data member with the method 
+
+        class Parent{
+            show(){
+                document.write("This is the parent class method");
+            }
+        }
+        class child extends Parent{
+            show(){
+                document.write("This is the child class method");
+            }
+        }
+        var a = [new Parent(),new child()];
+        a.forEach(function(message){
+            message.show();
+            document.write("<br>")
+        })
+
+      
+    </script>
+</body>
+</html>
