@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //An abstraction is a process of hidding the implementation of the application and showing only the functionality to the user.
+
+        // 1. we can not create an instance of abstact class.
+        // 2. It reduce the dublication of the code
+
+        function Vehicale(){
+            this.bikeName=bikeName;
+        }
+        Vehicale.prototype.show= function(){
+            return "This is a : "+this.bikeName
+        }
+        function Bike(bikeName){
+            this.bikeName=bikeName;
+        }
+        Bike.prototype= Object.create(Vehicale.prototype);
+        var bike= new Bike("shine");
+       document.write(bike.show());
+    // all child class instance also will be parent class instance
+       document.write(bike instanceof Vehicale); 
+       document.write("<br>");
+       document.write(bike instanceof Bike);
+
+    </script>
+</body>
+</html>
